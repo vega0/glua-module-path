@@ -10,3 +10,9 @@ If it is ends with non slash character, it means path is file path.
 # forexample
 ## path("this/is/my/path"):isfile() - true
 ## path("this/is/my/path"):isfolder() - false
+You can make sum with two path. It works like an OOP sum works. It will return new Path object with string concat, that makes one check before sum action. You can't sum file path with another path, because file path means completed path.
+## path("path/to/file.lua") + path("another/path/segment/") will accept an error.
+But
+## path("path/to/file") + path("another/path/segment/")
+returns
+### path("path/to/file/another/path/segment/")
