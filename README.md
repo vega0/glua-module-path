@@ -16,3 +16,8 @@ You can make sum with two path. It works like an OOP sum works. It will return n
 ### path("path/to/file") + path("another/path/segment/")
 #### Will return
 ### path("path/to/file/another/path/segment/")
+
+You can sum with file path, but you need to cut last segment by calling :up(i) operation.
+### path("path/to/file.lua"):up() + path("another/path/segment/") will return path("path/to/another/path/segment/")
+Because :up() just removes last path segment and it will allow to make sum action.
+
