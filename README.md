@@ -5,8 +5,8 @@ Lua 5.1 tested Path module provides just string path manipulations.
 return new path object with current path directory (debug.getinfo), also you can set path manually through first string argument of module call (like regular constructor call)
 
 # path("this/is/my/path")
-Creates path object with defined string literal. if path ends with delimeter slash, it means path is folder (catalogue) path.
+Creates path object with defined string literals. if path ends with delimeter slash, it means path is folder (catalogue) path.
 If it is ends with non slash character, it means path is file path.
-forexample
+# forexample
 ## path("this/is/my/path"):isfile() - true
 ## path("this/is/my/path"):isfolder() - false
