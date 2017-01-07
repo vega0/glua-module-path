@@ -6,7 +6,7 @@ return new path object with current path directory (debug.getinfo), also you can
 
 # path("this/is/my/path")
 Creates path object with defined string literal. if path ends with delimeter slash, it means path is folder (catalogue) path.
-If it ends with non slash character, it means path if file path.
+If it is ends with non slash character, it means path is file path.
 forexample
-path("this/is/my/path"):isfile() - true
-path("this/is/my/path"):isfolder() - false
+## path("this/is/my/path"):isfile() - true
+## path("this/is/my/path"):isfolder() - false
